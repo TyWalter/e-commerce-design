@@ -34,6 +34,7 @@ router.post('/', (req, res) => {
       product_name: "Basketball",
       price: 200.00,
       stock: 3,
+      category: 1
       tagIds: [1, 2, 3, 4]
     }
   */
@@ -96,7 +97,7 @@ router.put('/:id', (req, res) => {
         });
       }
 
-      return res.json(product);
+      return res.json("success");
     })
     .catch((err) => {
       // console.log(err);
@@ -104,8 +105,25 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
+  try{
+    await ProductTag.destroy({
+      where: {
+        product_id: req.params.id
+      }
+    });
+    await Product.destroy({
+      where: {
+        id: req.params.id
+      }
+    });
+    res.json({payload: "success"});
+  } catch(err){
+    if(err){
+      res.status(500).json({msg: err.message})
+    }
+  }
 });
 
 module.exports = router;
