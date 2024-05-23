@@ -1,23 +1,23 @@
-# 
+# E-commerce Design
 
 
 ## Description
-
+This application is a mock-up of an e-commerce back end database. It allows you to connect to a database, seed data into it, and then proceed to use RESTful to do get, put, post, and delete methods and have the database correctly display the information back.
 
 ## Visuals
 * ![Here is a screenshot](xxxxxxxxxxx) Here is a screenshot of an example employee database.
 
-* [Link to video demonstration](https://app.screencastify.com/v2/manage/videos/Lx7cy9uC9rQgdyA93pza)
+* [Link to video demonstration](xxxxxxxx)
 
 ## Usage
- This is also for grading purposes.
+This application is a test of my knowledge and abilities to take starter-code that was given to me and correctly get the back-end up and running. When using postman to mock data, all routes should be displaying and working correctly as they are intended using the RESTful method. This is also for grading purposes.
 
 ## Acknowledgments
 Thank you to 
-* [pg](https://www.npmjs.com/package/pg)
-* [console.table](https://www.npmjs.com/package/console.table)
-* [fs](https://www.npmjs.com/package/fs)
-* [Inquirer](https://www.npmjs.com/package/inquirer) 
+* [Dotenv](https://www.npmjs.com/package/dotenv)
+* [Express](https://www.npmjs.com/package/express)
+* [Pg](https://www.npmjs.com/package/pg)
+* [Sequelize](https://www.npmjs.com/package/sequelize) 
 
 for allowing me to use their packages.
 
